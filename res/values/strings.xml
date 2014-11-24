@@ -66,4 +66,14 @@
     <!-- URLs -->
     <string name="cr_website_title">Visit our website</string>
     <string name="cr_donate_title">Donate to CarbonDev</string>
+
+    <!-- Device settings -->
+    <string name="device_settings_title">Device</string>
+    <string name="devicesettings_app_summary">Configure device specific options</string>
+
+    <!-- Advanced Settings -->
+    <string name="advanced_options_title">Advanced options</string>
+    <string name="touch_screen_gesture_title">Touch Screen Gestures Device</string>
+    <string name="touch_screen_gesture_summary">Touch Screen Gestures Device options</string>
+
 </resources>

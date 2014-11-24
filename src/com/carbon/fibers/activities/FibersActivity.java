@@ -289,6 +289,7 @@ public class FibersActivity extends FragmentActivity {
                 getString(R.string.status_bar_title),
                 getString(R.string.navigation_bar_title),
                 getString(R.string.interface_title),
+                getString(R.string.advanced_options_title),
                 getString(R.string.carbon_changelog)};
         return titleString;
     }
@@ -305,7 +306,8 @@ public class FibersActivity extends FragmentActivity {
     public static final int FRAGMENT_ID_STATUSBAR = 1;
     public static final int FRAGMENT_ID_NAVIGATIONBAR = 2;
     public static final int FRAGMENT_ID_INTERFACE = 3;
-    public static final int FRAGMENT_ID_CHANGELOG = 4;
+    public static final int FRAGMENT_ID_ADVANCED = 4;
+    public static final int FRAGMENT_ID_CHANGELOG = 5;
 
     public static class PlaceholderFragment extends Fragment {
 
@@ -328,6 +330,9 @@ public class FibersActivity extends FragmentActivity {
                     break;
                 case FRAGMENT_ID_INTERFACE:
                     fragment = new InterfaceSettings();
+                    break;
+                case FRAGMENT_ID_ADVANCED:
+                    fragment = new AdvancedSettings();
                     break;
                 case FRAGMENT_ID_CHANGELOG:
                     fragment = new CarbonChangelog();
