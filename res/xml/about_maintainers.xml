@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
+
+        <!-- How to add yourself
+         *  your name > carbon:nameDev
+         *  what device you're maintaining > carbon:statusDev
+         *  your google picture link (not custom url) > carbon:googleHandle
+         *  your google ID (not custom url) > carbon:profile
+         *  your github > carbon:githubLink
+         *  your email > carbon:emailDev
+         *  your twitter > carbon:twitterLink
+         **   simple as one two and three
+        -->
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Christian &quot;Myself5&quot; Oder"
+            carbon:deviceStat="Galaxy S2 (i9100), Sony Xperia Z2 (sirius)"
+            carbon:googleHandle="-1TxI7--ayWY/Uvzijb96vVI/AAAAAAAAABI/BlWtcM9EvBo/w720-h719-no/"
+            carbon:googleProfile="103345265359054633486"
+            carbon:githubLink="http://github.com/Myself5"
+            carbon:emailDev="thchod@gmail.com" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Rabih &quot;Somcom3x&quot; Salamey"
+            carbon:deviceStat="Moto G/G 4G, Galaxy MSM8660s"
+            carbon:googleHandle="-D4Z0JMchNeM/Ul1aQeJvoZI/AAAAAAAAAX0/-UwbkqbNCfs/s256-no/"
+            carbon:googleProfile="103428140874910659774"
+            carbon:githubLink="http://github.com/somcom3x"
+            carbon:emailDev="somcom3@gmail.com"/>
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Vishal &quot;vishal_android freak&quot; Dubey"
+            carbon:deviceStat="Galaxy Note 2(N7100), Sony Xperia L(taoshan)"
+            carbon:googleHandle="-uGjKN6IBUzc/UybjyY0kmdI/AAAAAAAAAkg/ic3Wapj6iWs/s719-no/"
+            carbon:googleProfile="102092276437562778223"
+            carbon:githubLink="http://github.com/vishal-android-freak"
+            carbon:emailDev="yzvishal.vd@gmail.com"/>
+</PreferenceScreen>
