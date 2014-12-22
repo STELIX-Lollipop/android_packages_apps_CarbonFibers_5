@@ -10,8 +10,7 @@
             carbon:googleProfile="110719619509805969062"
             carbon:githubLink="http://github.com/CarbonROM"
             carbon:emailDev="support@carbonrom.org"
-            carbon:twitterLink="carbonrom"
-            carbon:donateLink="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WQV8UFE9JR9TG" />
+            carbon:twitterLink="carbonrom" />
 
         <com.carbon.fibers.widget.DeveloperPreference
             carbon:nameDev="Adam &quot;PantherHeel93&quot; Sambuco"
