@@ -46,6 +46,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.settings.*;
+import com.android.settings.aicp.*;
+import com.android.settings.cyanogenmod.*;
+import com.android.settings.slim.*;
+
 import com.carbon.fibers.R;
 import com.carbon.fibers.fragments.*;
 import com.carbon.fibers.widget.CustomDrawerLayout;
@@ -280,10 +285,10 @@ public class FibersActivity extends FragmentActivity {
         String titleString[];
         DRAWER_MODE = 0;
         titleString = new String[]{
-                getString(R.string.about_title),
-                getString(R.string.carbon_main_members),
-                getString(R.string.carbon_developers),
-                getString(R.string.carbon_maintainers),
+                getString(R.string.about_carbon_rom),
+                getString(R.string.status_bar_title),
+                getString(R.string.navigation_bar_title),
+                getString(R.string.interface_title),
                 getString(R.string.carbon_changelog)};
         return titleString;
     }
@@ -296,12 +301,11 @@ public class FibersActivity extends FragmentActivity {
      * Loads our Fragments.
      */
 
-    public static final int FRAGMENT_ID_ABOUT = 0;
-    public static final int FRAGMENT_ID_CORE_TEAM = 1;
-    public static final int FRAGMENT_ID_DEVELOPERS = 2;
-    public static final int FRAGMENT_ID_MAINTAINERS = 3;
+    public static final int FRAGMENT_ID_ABOUT_CARBON = 0;
+    public static final int FRAGMENT_ID_STATUSBAR = 1;
+    public static final int FRAGMENT_ID_NAVIGATIONBAR = 2;
+    public static final int FRAGMENT_ID_INTERFACE = 3;
     public static final int FRAGMENT_ID_CHANGELOG = 4;
-    // public static final int FRAGMENT_ID_CREDITS = 5;
 
     public static class PlaceholderFragment extends Fragment {
 
@@ -313,17 +317,17 @@ public class FibersActivity extends FragmentActivity {
             Fragment fragment;
             switch (fragmentId) {
                 default:
-                case FRAGMENT_ID_ABOUT:
-                    fragment = new AboutFragments();
+                case FRAGMENT_ID_ABOUT_CARBON:
+                    fragment = new AboutCarbon();
                     break;
-                case FRAGMENT_ID_CORE_TEAM:
-                    fragment = new AboutCoreMembers();
+                case FRAGMENT_ID_STATUSBAR:
+                    fragment = new StatusBarSettings();
                     break;
-                case FRAGMENT_ID_DEVELOPERS:
-                    fragment = new AboutDevelopers();
+                case FRAGMENT_ID_NAVIGATIONBAR:
+                    fragment = new NavBarSettings();
                     break;
-                case FRAGMENT_ID_MAINTAINERS:
-                    fragment = new AboutMaintainers();
+                case FRAGMENT_ID_INTERFACE:
+                    fragment = new InterfaceSettings();
                     break;
                 case FRAGMENT_ID_CHANGELOG:
                     fragment = new CarbonChangelog();

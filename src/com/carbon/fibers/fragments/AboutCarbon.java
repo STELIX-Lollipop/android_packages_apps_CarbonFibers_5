@@ -34,7 +34,7 @@ import java.util.Collections;
 
 import com.carbon.fibers.R;
 
-public class AboutCoreMembers extends PreferenceFragment {
+public class AboutCarbon extends PreferenceFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -51,7 +51,7 @@ public class AboutCoreMembers extends PreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.about_core);
+        addPreferencesFromResource(R.xml.about_carbon);
     }
 
     @Override

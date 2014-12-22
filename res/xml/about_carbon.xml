@@ -4,6 +4,15 @@
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="CarbonROM Team"
+            carbon:statusDev="@string/about_carbon_rom"
+            carbon:googleHandle="-TjsSwJ1nZzw/AAAAAAAAAAI/AAAAAAAAABs/LZWqBmAN_h0/"
+            carbon:googleProfile="110719619509805969062"
+            carbon:githubLink="http://github.com/CarbonROM"
+            carbon:emailDev="support@carbonrom.org"
+            carbon:twitterLink="carbonrom" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
             carbon:nameDev="Adam &quot;PantherHeel93&quot; Sambuco"
             carbon:statusDev="@string/status_designers"
             carbon:googleHandle="-lU548hmhN9g/UrOsNMMiagI/AAAAAAAABwY/q_LZbjoOG4E/w720-h719-no/"
@@ -120,5 +129,57 @@
             carbon:githubLink="http://github.com/winner00"
             carbon:emailDev="toverturf@gmail.com"
             carbon:twitterLink="expertontech" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Mehmet &quot;aways&quot; Sanok"
+            carbon:deviceStat="Galaxy S4 I9505 (jfltexx)"
+            carbon:statusDev="@string/status_dev"
+            carbon:googleHandle="-5tyThRVVJPA/UhjtD4bo4uI/AAAAAAAAC60/TpbciwTxpyA/s314-no/"
+            carbon:googleProfile="112103389398481585584"
+            carbon:githubLink="http://github.com/aways"
+            carbon:emailDev="mehmetsanok@gmail.com" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Nir &quot;NBruderman&quot; Bruderman"
+            carbon:deviceStat="Samsung Galaxy S4 (i9500)"
+            carbon:statusDev="@string/status_dev"
+            carbon:googleHandle="-ECAIVDph7CQ/AAAAAAAAAAI/AAAAAAAAKxU/KkfMTf2V-SA/"
+            carbon:googleProfile="115756447472067967502"
+            carbon:githubLink="http://github.com/Nbruderman"
+            carbon:emailDev="nbruderman@gmail.com" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
+            carbon:deviceStat="OnePlus One (bacon), Nexus 5 (hammerhead), Nexus 7 (flo)"
+            carbon:statusDev="@string/status_dev"
+            carbon:googleHandle="-C6FmDVYl1X4/UxXrT9UpT1I/AAAAAAAABQg/nSU8_tuFBPc/s348-no/"
+            carbon:googleProfile="107337691479996516667"
+            carbon:githubLink="http://github.com/STELIX"
+            carbon:emailDev="ssspinni@gmail.com"
+            carbon:twitterLink="stefanomura1973" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Christian &quot;Myself5&quot; Oder"
+            carbon:deviceStat="Galaxy S2 (i9100), Sony Xperia Z2 (sirius)"
+            carbon:googleHandle="-1TxI7--ayWY/Uvzijb96vVI/AAAAAAAAABI/BlWtcM9EvBo/w720-h719-no/"
+            carbon:googleProfile="103345265359054633486"
+            carbon:githubLink="http://github.com/Myself5"
+            carbon:emailDev="thchod@gmail.com" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Rabih &quot;Somcom3x&quot; Salamey"
+            carbon:deviceStat="Moto G/G 4G, Galaxy MSM8660s"
+            carbon:googleHandle="-D4Z0JMchNeM/Ul1aQeJvoZI/AAAAAAAAAX0/-UwbkqbNCfs/s256-no/"
+            carbon:googleProfile="103428140874910659774"
+            carbon:githubLink="http://github.com/somcom3x"
+            carbon:emailDev="somcom3@gmail.com"/>
+
+        <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="Vishal &quot;vishal_android freak&quot; Dubey"
+            carbon:deviceStat="Galaxy Note 2(N7100), Sony Xperia L(taoshan)"
+            carbon:googleHandle="-uGjKN6IBUzc/UybjyY0kmdI/AAAAAAAAAkg/ic3Wapj6iWs/s719-no/"
+            carbon:googleProfile="102092276437562778223"
+            carbon:githubLink="http://github.com/vishal-android-freak"
+            carbon:emailDev="yzvishal.vd@gmail.com"/>
 
 </PreferenceScreen>

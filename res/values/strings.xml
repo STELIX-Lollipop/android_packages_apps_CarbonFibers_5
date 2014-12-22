@@ -17,6 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">About Carbon</string>
+    <string name="about_carbon_rom">AfterMarket Android ROM</string>
     <string name="maintainers_title">Maintainers</string>
     <string name="maintainers_version_text">listed in no particular order</string>
     <string name="finish_button_text">Finish</string>
