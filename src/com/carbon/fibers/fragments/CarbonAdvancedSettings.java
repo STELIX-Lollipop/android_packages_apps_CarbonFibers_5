@@ -28,7 +28,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.List;
 
-public class AdvancedSettings extends SettingsPreferenceFragment {
+public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
 
     private static final String PREF_DEVICESETTINGS_APP = "devicesettings_app";
 

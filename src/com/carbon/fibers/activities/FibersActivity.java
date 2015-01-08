@@ -46,8 +46,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.settings.*;
 import com.android.settings.aicp.*;
+import com.android.settings.carbon.*;
 import com.android.settings.cyanogenmod.*;
 import com.android.settings.slim.*;
 
@@ -288,7 +288,8 @@ public class FibersActivity extends FragmentActivity {
                 getString(R.string.about_carbon_rom),
                 getString(R.string.status_bar_title),
                 getString(R.string.navigation_bar_title),
-                getString(R.string.interface_title),
+                getString(R.string.interface_settings_title),
+                getString(R.string.recents_settings_title),
                 getString(R.string.advanced_options_title),
                 getString(R.string.carbon_changelog)};
         return titleString;
@@ -306,8 +307,9 @@ public class FibersActivity extends FragmentActivity {
     public static final int FRAGMENT_ID_STATUSBAR = 1;
     public static final int FRAGMENT_ID_NAVIGATIONBAR = 2;
     public static final int FRAGMENT_ID_INTERFACE = 3;
-    public static final int FRAGMENT_ID_ADVANCED = 4;
-    public static final int FRAGMENT_ID_CHANGELOG = 5;
+    public static final int FRAGMENT_ID_RECENTS = 4;
+    public static final int FRAGMENT_ID_ADVANCED = 5;
+    public static final int FRAGMENT_ID_CHANGELOG = 6;
 
     public static class PlaceholderFragment extends Fragment {
 
@@ -323,16 +325,19 @@ public class FibersActivity extends FragmentActivity {
                     fragment = new AboutCarbon();
                     break;
                 case FRAGMENT_ID_STATUSBAR:
-                    fragment = new StatusBarSettings();
+                    fragment = new CarbonStatusBarSettings();
                     break;
                 case FRAGMENT_ID_NAVIGATIONBAR:
-                    fragment = new NavBarSettings();
+                    fragment = new CarbonNavBarSettings();
                     break;
                 case FRAGMENT_ID_INTERFACE:
-                    fragment = new InterfaceSettings();
+                    fragment = new CarbonInterfaceSettings();
+                    break;
+                case FRAGMENT_ID_RECENTS:
+                    fragment = new CarbonRecentsSettings();
                     break;
                 case FRAGMENT_ID_ADVANCED:
-                    fragment = new AdvancedSettings();
+                    fragment = new CarbonAdvancedSettings();
                     break;
                 case FRAGMENT_ID_CHANGELOG:
                     fragment = new CarbonChangelog();
