@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">About Carbon</string>
-    <string name="about_carbon_rom">AfterMarket Android ROM</string>
+    <string name="about_stelix_rom">AfterMarket Android ROM</string>
     <string name="maintainers_title">Maintainers</string>
     <string name="maintainers_version_text">listed in no particular order</string>
     <string name="finish_button_text">Finish</string>
@@ -65,7 +65,7 @@
 
     <!-- URLs -->
     <string name="cr_website_title">Visit our website</string>
-    <string name="cr_donate_title">Donate to CarbonDev</string>
+    <string name="cr_donate_title">Donate to STELIX</string>
 
     <!-- Device settings -->
     <string name="device_settings_title">Device</string>

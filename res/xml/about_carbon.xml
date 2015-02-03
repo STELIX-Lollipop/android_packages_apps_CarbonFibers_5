@@ -4,10 +4,19 @@
     xmlns:carbon="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.carbon.fibers.widget.DeveloperPreference
+            carbon:nameDev="STELIX Lollipop"
+            carbon:statusDev="@string/about_stelix_rom"
+            carbon:googleHandle="-eYrCThb3BBk/VNEErBqqNzI/AAAAAAAAPiY/p6YGGK-HyAE/"
+            carbon:googleProfile="107337691479996516667"
+            carbon:githubLink="http://github.com/STELIX-LP"
+            carbon:emailDev="ssspinni@gmail.com"
+            carbon:twitterLink="stefanomura1973" />
+
+        <com.carbon.fibers.widget.DeveloperPreference
             carbon:nameDev="Stefano &quot;STELIX PippoX3&quot; Mura"
             carbon:deviceStat="OnePlus One (bacon), Nexus 5 (hammerhead), Nexus 7 (flo)"
             carbon:statusDev="@string/status_dev"
-            carbon:googleHandle="-C6FmDVYl1X4/UxXrT9UpT1I/AAAAAAAABQg/nSU8_tuFBPc/s348-no/"
+            carbon:googleHandle="-LdaKMRXx9Yo/VMJO-A3KdGI/AAAAAAAAPhk/6YyjceIyMzU/"
             carbon:googleProfile="107337691479996516667"
             carbon:githubLink="http://github.com/STELIX"
             carbon:emailDev="ssspinni@gmail.com"
