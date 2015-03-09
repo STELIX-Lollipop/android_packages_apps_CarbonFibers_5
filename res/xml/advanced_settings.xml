@@ -19,6 +19,17 @@
     android:title="@string/advanced_options_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Advanced Settings -->
+    <PreferenceScreen
+        android:key="advanced_settings"
+        android:icon="@drawable/ic_settings_advanced_teal"
+        android:title="@string/advanced_options_title" >
+        <intent
+                android:action="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS"
+                android:targetPackage="com.cyanogenmod.settings.device"
+                android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
+    </PreferenceScreen>
+
     <!-- Device Specific Touchscreen gestures -->
     <PreferenceScreen
         android:key="devicesettings_app"

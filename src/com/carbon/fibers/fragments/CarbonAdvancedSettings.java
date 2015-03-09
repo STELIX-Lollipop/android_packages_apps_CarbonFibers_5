@@ -31,8 +31,10 @@ import java.util.List;
 public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
 
     private static final String PREF_DEVICESETTINGS_APP = "devicesettings_app";
+    private static final String PREF_ADVANCED_SETTINGS = "advanced_settings";
 
     private PreferenceScreen mDeviceSettingsApp;
+    private PreferenceScreen mAdvancedSettings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,11 +43,14 @@ public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.advanced_settings);
 
         mDeviceSettingsApp = (PreferenceScreen) findPreference(PREF_DEVICESETTINGS_APP);
+        mAdvancedSettings = (PreferenceScreen) findPreference(PREF_ADVANCED_SETTINGS);
 
         if (!deviceSettingsAppExists()) {
             getPreferenceScreen().removePreference(mDeviceSettingsApp);
         }
-
+        if (!needsAdvancedSettings()) {
+            getPreferenceScreen().removePreference(mAdvancedSettings);
+        }
     }
 
     private boolean deviceSettingsAppExists() {
@@ -58,5 +63,9 @@ public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
 
         }
         return false;
+    }
+
+    private boolean needsAdvancedSettings() {
+        return getResources().getBoolean(R.bool.has_advanced_settings);
     }
 }
