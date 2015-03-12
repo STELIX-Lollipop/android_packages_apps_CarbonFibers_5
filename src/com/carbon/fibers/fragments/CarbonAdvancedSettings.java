@@ -30,31 +30,30 @@ import java.util.List;
 
 public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
 
-    private static final String PREF_DEVICESETTINGS_APP = "devicesettings_app";
-    private static final String PREF_ADVANCED_SETTINGS = "advanced_settings";
+    private static final String KEY_ADVANCED_DEVICE_SETTINGS = "advanced_device_settings";
+    private static final String KEY_SPECIFIC_GESTURE_SETTINGS = "device_specific_gesture_settings";
 
-    private PreferenceScreen mDeviceSettingsApp;
-    private PreferenceScreen mAdvancedSettings;
+    private PreferenceScreen mAdvancedDeviceSettings;
+    private PreferenceScreen mSpecificGestureSettings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.advanced_settings);
-
-        mDeviceSettingsApp = (PreferenceScreen) findPreference(PREF_DEVICESETTINGS_APP);
-        mAdvancedSettings = (PreferenceScreen) findPreference(PREF_ADVANCED_SETTINGS);
+        mAdvancedDeviceSettings = (PreferenceScreen) findPreference(KEY_ADVANCED_DEVICE_SETTINGS);
+        mSpecificGestureSettings = (PreferenceScreen) findPreference(KEY_SPECIFIC_GESTURE_SETTINGS);
 
         if (!deviceSettingsAppExists()) {
-            getPreferenceScreen().removePreference(mDeviceSettingsApp);
+            getPreferenceScreen().removePreference(mSpecificGestureSettings);
         }
         if (!needsAdvancedSettings()) {
-            getPreferenceScreen().removePreference(mAdvancedSettings);
+            getPreferenceScreen().removePreference(mAdvancedDeviceSettings);
         }
     }
 
     private boolean deviceSettingsAppExists() {
-        Intent intent = mDeviceSettingsApp.getIntent();
+        Intent intent = mSpecificGestureSettings.getIntent();
         if (intent != null) {
             PackageManager pm = getActivity().getPackageManager();
             List<ResolveInfo> list = pm.queryIntentActivities(intent, PackageManager.GET_META_DATA);
@@ -62,6 +61,15 @@ public class CarbonAdvancedSettings extends SettingsPreferenceFragment {
             return (listSize > 0) ? true : false;
 
         }
+        return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
     }
 
